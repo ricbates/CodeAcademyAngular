@@ -1,0 +1,32 @@
+
+In GitHub Create a new local repository - 
+
+Name:	CodeAcademyAngular		[Remote name: https://github.com/ricbates/AngulrOnCodeAcademy]
+Local Path:	D:\Git\CodeAcademyAngular
+GitIgnore: Node
+
+No local repository...
+	o	Open command prompt
+	o	Change to D:\Git
+	o 	Created D:\Git\CodeAcademyAngular in Command window
+	
+> git clone https://github.com/ricbates/AngularOnCodeAcademy
+
+	o 	modified .gitignore file
+	o 	>git add .
+	o 	>git commit -m "modified .gitignore, combined Windows, and Node file contents."
+	o 	>git remote add origin https://github.com/ricbates/AngularOnCodeAcademy
+	o 	>git push 
+	
+*** This didn't seem to work correctly
+
+Used GitHub [Windows] to create local repo.
+
+Doing everything from command line now.
+
+Added this README
+
+1: git init [inside D:\Git\CodeAcademyAngular>]
+
+2: saving this README now.
+
