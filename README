@@ -26,7 +26,56 @@ Doing everything from command line now.
 
 Added this README
 
-1: git init [inside D:\Git\CodeAcademyAngular>]
+1: >git init [inside D:\Git\CodeAcademyAngular>]
 
 2: saving this README now.
 
+3: 	D:\Git\CodeAcademyAngular>git add .
+	warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+	whose behaviour will change in Git 2.0 with respect to paths you removed.
+	Paths like 'AngularOnCodeAcademy' that are
+	removed from your working tree are ignored with this version of Git.
+
+	* 'git add --ignore-removal <pathspec>', which is the current default,
+	  ignores paths you removed from your working tree.
+
+	* 'git add --all <pathspec>' will let you also record the removals.
+
+	Run 'git status' to check the paths you removed from your working tree.
+	
+4: Not sure whats happening...
+
+D:\Git\CodeAcademyAngular>git status
+	On branch master
+	Your branch is up-to-date with 'origin/master'.
+
+	Changes to be committed:
+	  (use "git reset HEAD <file>..." to unstage)
+
+			new file:   README
+
+	Changes not staged for commit:
+	  (use "git add/rm <file>..." to update what will be committed)
+	  (use "git checkout -- <file>..." to discard changes in working directory)
+
+			deleted:    AngularOnCodeAcademy
+
+5: >git add -A	[no errors]
+
+6: >git commit -m "re-iniatialized repo, adding README"
+	[master 3eea147] re-iniatialized repo, adding README
+	 2 files changed, 32 insertions(+), 1 deletion(-)
+	 delete mode 160000 AngularOnCodeAcademy
+	 create mode 100644 README
+
+7: 	D:\Git\CodeAcademyAngular>git push -u origin master
+	Username for 'https://github.com': ricbates
+	Password for 'https://ricbates@github.com':
+	Counting objects: 4, done.
+	Delta compression using up to 8 threads.
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (3/3), 736 bytes | 0 bytes/s, done.
+	Total 3 (delta 0), reused 0 (delta 0)
+	To https://github.com/ricbates/CodeAcademyAngular.git
+	   68a005a..3eea147  master -> master
+	Branch master set up to track remote branch master from origin.
