@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+<body>
+<script>
+    var computerChoice = Math.random();
+    if (computerChoice < 0.34) {
+        computerChoice = "rock";
+    } else if(computerChoice <= 0.67) {
+        computerChoice = "paper";
+    } else {
+        computerChoice = "scissors";
+    } 
+    console.log("Computer: " + computerChoice);
+    console.log("----------------------------");
+    
+    var compare = function(userChoice, computerChoice){
+        console.log("User: " + userChoice);
+        if (userChoice === computerChoice){
+            return "The result is a tie!";
+        }
+        else if (userChoice === "rock"){
+            if(computerChoice === "scissors")
+            {
+                return "rock wins";
+            }
+            else
+            {
+                return "paper wins";
+            }
+        }
+        else if (userChoice === "paper"){
+            if(computerChoice ==="rock")
+            {
+                return "paper wins";
+            }
+            else
+            {
+                return "scissors wins";
+            }
+        }
+        else if (userChoice === "scissors"){
+            if(computerChoice ==="rock")
+            {
+                return "rock wins";
+            }
+            else
+            {
+                return "scissors wins";
+            }
+        }
+    }
+    console.log(compare("rock", computerChoice));
+    console.log(compare("paper", computerChoice));
+    console.log(compare("scissors", computerChoice));
+    </script>
+</body>
+</html>
